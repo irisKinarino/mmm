@@ -1,0 +1,726 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+img{
+    vertical-align: bottom;
+}
+a{
+    transition: .5s;
+}
+
+/* **********************            header                *********************** */
+header{
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: .9;
+}
+.header_box{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header_l{
+    float: left;
+}
+.header_l a:hover{
+    color: #791285;
+    opacity: .8;
+    transition: all .3s ease;
+}
+.header_l img{
+    width: 60px;
+    margin-left: 15px;
+}
+.header_r{
+    float: right;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.header_r nav ul li{
+    float: left;
+}
+.header_r nav ul li{
+    list-style: none;
+    margin-top: 25px;
+}
+.header_r nav ul li a{
+    text-decoration: none;
+    color: #66646a;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 12px;
+    transition: all .5s ease;
+}
+.header_r nav ul li a:hover{
+    color: #791285;
+    opacity: .8;
+}
+span.header_topLine{
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: plum;
+}
+@media all and (max-width:420px){
+    header{
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        background-color: #fff;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .header_l img{
+        width: 35px;
+        margin-left: 15px;
+        margin-top: 3px;
+    }
+    .header_r{
+        margin-right: 15px;
+    }
+    .header_r nav ul li{
+        list-style: none;
+        margin-top: 10px;
+    }
+    .header_r nav ul li a{
+        text-decoration: none;
+        color: #66646a;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0 10px;
+        transition: all .5s ease;
+    }
+    .header_r nav ul li a:hover{
+        color: #791285;
+        opacity: .8;
+    }
+    span.header_topLine{
+        display: block;
+        width: 100%;
+        height: 8px;
+        background-color: plum;
+    }
+}
+
+/* **********************            wrapper                *********************** */
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto 0;
+}
+
+
+/* **********************            mv                *********************** */
+section.mv{
+    text-align: center;
+}
+.mv_bg_n_logo{
+    background-image:  url("../images/fv.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+}
+.mv_bg_n_logo img{
+    width: 70px;
+    margin-top: 25%;
+}
+@media all and (max-width:610px){
+    .mv_bg_n_logo img{
+    width: 50px;
+    margin-top: 26%;
+    }
+}
+@media all and (max-width:490px){
+    .mv_bg_n_logo img{
+    width: 40px;
+    margin-top: 27%;
+    }
+}
+@media all and (max-width:410px){
+    .mv_bg_n_logo img{
+    width: 33px;
+    margin-top: 27%;
+    }
+}
+@media all and (max-width:340px){
+    .mv_bg_n_logo img{
+    width: 28px;
+    margin-top: 27%;
+    }
+}
+/* **********************            container共通部分                 *********************** */
+h1{
+    font-size: 38px;
+    color: #66646a;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Noto Serif JP', serif;
+}
+span.purpleLine{
+    display: block;
+    border-bottom: solid 2px #c4a8d0;
+    border-radius: 10px;
+    width: 50px;
+    margin: 25px auto;
+}
+p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: #66646a;
+}
+#catch, #greeting, #commitment, #products, #ingredients{
+    margin-top: 80px;
+}
+@media all and (max-width:768px){
+    #catch{
+        margin-top: -110px;
+    }
+    h1{
+        font-size: 28px;
+        font-weight: 400;
+    }
+    span.purpleLine{
+        display: block;
+        border-bottom: solid 2px #c4a8d0;
+        border-radius: 10px;
+        width: 50px;
+        margin: 25px auto;
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 30px;
+        color: #66646a;
+    }
+}
+@media all and (max-width:560px){
+    #catch{
+        margin-top: -250px;
+    }
+    h1{
+        font-size: 28px;
+        font-weight: 400;
+    }
+    span.purpleLine{
+        display: block;
+        border-bottom: solid 2px #c4a8d0;
+        border-radius: 10px;
+        width: 50px;
+        margin: 25px auto;
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 30px;
+        color: #66646a;
+    }
+}
+@media all and (max-width:420px){
+    #catch{
+        margin-top: -380px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    span.purpleLine{
+        display: block;
+        border-bottom: solid 2px #c4a8d0;
+        border-radius: 10px;
+        width: 50px;
+        margin: 25px auto;
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 30px;
+        color: #66646a;
+    }
+}
+
+/* **********************            catch copy（キャッチコピー）                *********************** */
+p.ca_p{
+    font-size: 18px;
+}
+@media all and (max-width:768px){
+    p.ca_p{
+        font-size: 16px;
+    }  
+}
+@media all and (max-width:375px){
+    p.ca_p{
+        font-size: 14px;
+    }  
+} 
+
+
+/* **********************            greeting（ご挨拶）                *********************** */
+#greeting{
+    background-color: #f5f1fc;
+    border-radius: 10px;
+    padding: 50px 0;
+}
+@media all and (max-width:768px){
+    p.gr_p{
+        font-size: 16px;
+    }  
+}
+@media all and (max-width:560px){
+    p.gr_p{
+        font-size: 14px;
+        width: 96%;
+        margin: 0 auto;
+    }  
+}
+@media all and (max-width:375px){
+    p.gr_p{
+        font-size: 11.6px;
+        width: 96%;
+        margin: 0 auto;
+    }  
+}
+
+/* **********************            commitment（３つのこだわり）                *********************** */
+p.co_p{
+    font-size: 14px;
+    width: 96%;
+    margin: 0 auto;
+}
+.original{
+    margin: 70px auto;
+}
+.hyuga_toki, .citrus, .mineral{
+    overflow: hidden;
+    margin: 50px auto 80px;
+}
+.l_img{
+    float: left;    
+    width: 40%;
+}
+.l_img img{
+    width: 72%;
+    margin-left: 15%;
+}
+.description{
+    float: right;
+    width: 60%;
+}
+.description h2{
+    color: #791285;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.description p{
+    text-align: left;
+    font-size: 14px;
+    width: 90%;
+    margin-top: 15px;
+}
+
+@media all and (max-width:768px){
+    .original{
+        margin: 70px auto;
+    }
+    .hyuga_toki, .citrus, .mineral{
+        overflow: hidden;
+        margin: 50px auto 80px;
+    }
+    .l_img{
+        float: none;    
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .l_img img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .description{
+        float: none;
+        width: 75%;
+        margin: 30px auto;
+    }
+    .description h2{
+        color: #791285;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .description p{
+        text-align: left;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+@media all and (max-width:560px){
+    .original{
+        margin: 70px auto;
+    }
+    .hyuga_toki, .citrus, .mineral{
+        overflow: hidden;
+        margin: 50px auto 80px;
+    }
+    .l_img{
+        float: none;    
+        width: 70%;
+        margin: 0 auto;
+    }
+    .l_img img{
+        width: 100%;
+        margin-left: auto;
+    }
+    .description{
+        float: none;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .description h2{
+        color: #791285;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .description p{
+        text-align: left;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+@media all and (max-width:500px){
+    .original{
+        margin: 70px auto;
+    }
+    .hyuga_toki, .citrus, .mineral{
+        overflow: hidden;
+        margin: 50px auto 80px;
+    }
+    .l_img{
+        float: none;    
+        width: 85%;
+        margin: 0 auto;
+    }
+    .l_img img{
+        width: 100%;
+        margin-left: auto;
+    }
+    .description{
+        float: none;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .description h2{
+        color: #791285;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .description p{
+        text-align: left;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+/* **********************            products（商品紹介）                *********************** */
+.map{
+    background-color: #f5f1fc;
+    border-radius: 10px;
+    padding: 50px 0
+}
+.kinarino_bottom p.in_p{
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+
+/* **********************            products（商品紹介）                *********************** */
+#products{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px 0
+}
+.kinarino_bottom p.in_p{
+    font-size: 14px;
+    margin-top: 25px;
+}
+.kinarino_details{
+    width: 96%;
+    margin: 80px auto;
+}
+.kinarino_top{
+    overflow: hidden;
+    padding: 0 27%;
+}
+.top_r p{
+    margin-top: 0;
+}
+.top_l{
+    float: left;
+}
+.top_l img{
+    width: 77px;
+    margin-left: 100%;
+}
+.top_r{
+    margin-top: 50px;
+    float: left;
+    margin-left: 25%;
+}
+
+@media all and (max-width:730px){
+    .kinarino_top{
+        overflow: hidden;
+        padding: 0 ;
+    }
+    .top_l img{
+        width: 60px;
+        margin-left: 100%;
+    }
+    .top_r{
+        margin-top: 50px;
+        float: left;
+        margin-left: 25%;
+    }
+}
+
+
+
+
+/* **********************            ingredients（成分表）                *********************** */
+.ingredient p.in_p{
+    font-size: 12px;
+}
+p.in_p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 30px 30px 30px;
+}
+
+
+@media all and (max-width:768px){
+    p.in_p{
+        width: 98%;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0 30px 30px 30px;
+    }
+}
+@media all and (max-width:560px){
+    p.in_p{
+        font-size: 10px;
+    }
+}
+/**********************************        TOPへ戻るボタン     ********************************/
+.btnBackToTop {
+    display:block;
+    width:60px;
+    height:60px;
+    padding:20px 7px 7px;
+    font-size:1em;
+    border-radius: 30px;
+    background-color: #8d5b92;
+    overflow: hidden;
+    text-align: center;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    line-height:1.2;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.btnBackToTop span {
+    display:block;
+    position:relative;
+}   
+.btnBackToTop span::before {
+    display:block;
+    content:"";
+    width:15px;
+    height:15px;
+    border-top:2px solid #FFF;
+    border-left:2px solid #FFF;
+    transform:rotate(45deg);
+    position:absolute;
+    top: 6px;
+    left: 15px;
+}
+.btnBackToTop:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+/* **********************            お問合せボタン             *********************** */
+.btn_form{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.btn_form a{
+    font-size: 18px;
+    color: #fff;
+    background-color: #8d5b92;
+    padding: 20px 80px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn_form a:hover{
+    opacity: .9;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+/* **********************            footer                *********************** */
+footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f1fc;
+    text-align: center;
+    padding: 50px 0;
+}
+.c_name{
+    overflow: hidden;
+}
+img.logo{
+    width: 55px;
+}
+img.just_name{
+    width: 16%;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+p.address{
+    width: 100%;
+    max-width: 1000px;
+    font-size: 14px;
+    margin: 20px auto;
+    letter-spacing: .05em;
+}
+small{
+    font-size: 12px;
+    color: #66646a;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+span.space{
+    display: none;
+}
+@media all and (max-width:1300px){
+    img.logo{
+        width: 65px;
+    }
+    img.just_name{
+        width: 330px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+}
+@media all and (max-width:560px){
+    footer{
+        width: 100%;
+        overflow: hidden;
+        background-color: #f5f1fc;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .c_name{
+        overflow: hidden;
+    }
+    img.logo{
+        width: 55px;
+    }
+    img.just_name{
+        width: 300px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    p.address{
+        width: 100%;
+        max-width: 1000px;
+        font-size: 13px;
+        margin: 20px auto;
+        letter-spacing: .05em;
+    }
+    small{
+        font-size: 11px;
+    }
+    span.no_break{
+        display: block;
+    }
+    span.space{
+        display: inline;
+    }
+}
+@media all and (max-width:430px){
+    img.logo{
+        width: 60px;
+    }
+    img.just_name{
+        width: 250px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+}
+@media all and (max-width:375px){
+    img.logo{
+        width: 43px;
+    }
+    img.just_name{
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 3px;
+    }
+    p.address{
+        width: 96%;
+        max-width: 1000px;
+        font-size: 12px;
+        margin: 20px auto 40px;
+        letter-spacing: .05em;
+    } 
+}
+@media all and (max-width:300px){
+    footer{
+        text-align: center;
+    }
+    p.address{
+        width: 96%;
+        max-width: 1000px;
+        font-size: 12px;
+        margin: 20px auto 40px;
+        letter-spacing: .05em;
+    } 
+    span.add_break{
+        display: block;
+    }
+}
+@media all and (max-width:250px){
+    img.logo{
+        width: 41px;
+        margin-bottom: 5px;
+    }
+}
+
+span.break{
+    display: block;
+}
+@media all and (max-width:560px){
+    span.break{
+        display: inline;
+    } 
+}
